@@ -82,7 +82,7 @@ class Part1 {
         System.out.println("Time: " + hours + ":" + minutes + ":" + seconds);
     }
 
-    public static void linearProgram(int x1, int x2, int y1, int y2, int x3, int x4) { // 6 задание - не завершено
+    public static void linearProgram(int x1, int x2, int y1, int y2, int x3, int x4) {
         for (int i = -10; i <= 10; i++) {
             for (int j = -10; j <= 10; j++) {
                 System.out.print("[" + i + "]" + "[" + j + "]" + " ");
