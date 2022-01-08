@@ -20,34 +20,34 @@ class Part1 {
         Scanner yAxisScan = new Scanner(System.in);
 
         switch (exercise) {
-            case 1, 2:
+            case 1, 2 -> {
                 System.out.println("Enter value of a: ");
                 a = aScan.nextInt();
                 System.out.println("Enter value of b: ");
                 b = bScan.nextInt();
                 System.out.println("Enter value of c: ");
                 c = cScan.nextInt();
-                break;
-            case 3:
+            }
+            case 3 -> {
                 System.out.println("Enter value of x: ");
                 x = xScan.nextInt();
                 System.out.println("Enter value of y: ");
                 y = yScan.nextInt();
-                break;
-            case 4:
+            }
+            case 4 -> {
                 System.out.println("Enter value of nnn.ddd: ");
                 nnnDDD = nnnDDDScan.nextDouble();
-                break;
-            case 5:
+            }
+            case 5 -> {
                 System.out.println("Enter amount of seconds: ");
                 seconds = secondsScan.nextInt();
-                break;
-            case 6:
+            }
+            case 6 -> {
                 System.out.println("Enter value of X: ");
                 xAxis = xAxisScan.nextInt();
                 System.out.println("Enter value of Y: ");
                 yAxis = yAxisScan.nextInt();
-                break;
+            }
         }
     }
 
@@ -67,10 +67,10 @@ class Part1 {
     }
 
     public static void replacingParts() { // 4 задание
-        String valueOfnnnDDD = String.valueOf(nnnDDD);
-        String[] splittednnnDDDD = valueOfnnnDDD.split("");
-        for (int i = splittednnnDDDD.length-1; i >= 0; i--) {
-            System.out.print(splittednnnDDDD[i]);
+        String valueOfNnnDDD = String.valueOf(nnnDDD);
+        String[] splittedNnnDDDD = valueOfNnnDDD.split("");
+        for (int i = splittedNnnDDDD.length-1; i >= 0; i--) {
+            System.out.print(splittedNnnDDDD[i]);
         }
     }
 
@@ -87,7 +87,7 @@ class Part1 {
             for (int j = -10; j <= 10; j++) {
                 System.out.print("[" + i + "]" + "[" + j + "]" + " ");
             }
-            System.out.println("");
+            System.out.println(" ");
         }
         if (xAxis <= x1 && xAxis >= x2 && yAxis <= y1) {
             System.out.println("точка входит в выделенную область");

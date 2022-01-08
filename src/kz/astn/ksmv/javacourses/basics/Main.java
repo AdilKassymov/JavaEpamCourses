@@ -14,39 +14,47 @@ class Main {
                 System.out.println("Please enter an exercise of part " + part + ":");
                 int exercisePart1 = exerciseScanner.nextInt();
                 switch (exercisePart1) {
-                    case 1:
+                    case 1 -> {
                         Part1.enterValues(exercisePart1);
                         Part1.calculation();
-                        break;
-                    case 2:
+                    }
+                    case 2 -> {
                         Part1.enterValues(exercisePart1);
                         Part1.calculationQ();
-                        break;
-                    case 3:
+                    }
+                    case 3 -> {
                         Part1.enterValues(exercisePart1);
                         Part1.calculationT();
-                        break;
-                    case 4:
+                    }
+                    case 4 -> {
                         Part1.enterValues(exercisePart1);
                         Part1.replacingParts();
-                        break;
-                    case 5:
+                    }
+                    case 5 -> {
                         Part1.enterValues(exercisePart1);
                         Part1.secondsToHHmmSS();
-                        break;
-                    case 6:
+                    }
+                    case 6 -> {
                         Part1.enterValues(exercisePart1);
                         Part1.linearProgram(2, -2, 4, 3, 4, -4);
-                        break;
+                    }
                 }
             case 2:
                 System.out.println("Please enter an exercise of part " + part + ":");
                 int exercisePart2 = exerciseScanner.nextInt();
                 switch (exercisePart2) {
                     case 1:
+                        Part2.triangleCheck(60, 90, 60);
+                        Part2.triangleCheck(60, 90, 30);
+                        break;
+                    case 2:
+                        Part2.findMax();
+                        break;
+                    case 3:
                         break;
                 }
-                break;
+            default:
+                throw new IllegalStateException("Unexpected value: " + part);
         }
     }
 }
